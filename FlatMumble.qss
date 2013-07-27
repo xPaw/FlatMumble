@@ -7,7 +7,7 @@
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
 
-QMainWindow, QDialog {
+QMainWindow, QDialog, QWidget {
 	background-color: #2F3233;
 	color: #FFF;
 }
@@ -60,6 +60,26 @@ QGroupBox {
 	color: #FFF;
 	border: 1px solid #34495E;
 	padding-top: 10px;
+}
+
+QWidget {
+	border: 1px solid #34495E;
+}
+
+QTabBar::tab {
+	background-color: #34495E;
+}
+
+QTabBar::tab:selected {
+	background-color: #1ABC9C;
+}
+
+QTabBar::tab:selected:hover {
+	color: #FFF;
+}
+
+QTabBar::tab:hover {
+	color: #1ABC9C;
 }
 
 QLabel, QCheckBox, QRadioButton {
@@ -162,6 +182,7 @@ QTreeView::item:selected:active {
 
 QTreeView::item:selected:!active {
 	background-color: #313E4B;
+	color: #BBB;
 }
 
 /*
