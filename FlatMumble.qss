@@ -1,0 +1,233 @@
+/*
+ * Flat Mumble Theme by xPaw
+ *
+ * Website: http://xpaw.ru
+ * GitHub: https://github.com/xPaw
+ *
+ * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
+ */
+
+QMainWindow {
+	background-color: #2F3233;
+}
+
+QMainWindow::separator {
+	background: transparent;
+	width: 3px;
+	height: 3px;
+}
+
+QMainWindow::separator:hover {
+	background: #888;
+}
+
+a {
+	color: #3498db;
+	text-decoration: none;
+}
+
+/* TODO: hover doesn't work? */
+a:hover {
+	color: #2980b9;
+	text-decoration: underline;
+}
+
+/*
+ * Input box
+ */
+QTextEdit {
+	background-color: #262829;
+	color: #ecf0f1;
+	border: 0;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/*
+ * Toolbar
+ */
+QToolBar {
+	background-color: #262829;
+	padding: 10px;
+	border: 0;
+	margin: 5px;
+	margin-bottom: 0;
+	spacing: 5px;
+}
+
+QToolBar::separator {
+	background: #2C3E50;
+	width: 1px;
+	height: 1px;
+}
+
+QToolButton {
+	background-color: transparent;
+	border: 0;
+}
+
+QToolButton:hover {
+	background-color: #2F3233;
+	border: 0;
+}
+
+QToolButton:on {
+	background-color: transparent;
+	border: 0;
+}
+
+QToolButton:off {
+	background-color: transparent;
+	border: 0;
+}
+
+/*
+ * Channels and users
+ */
+QTreeView#qtvUsers {
+	background-color: #262829;
+	color: #FFF;
+	font: normal 180% Arial, sans-serif;
+	font-weight: bold;
+	padding: 10px;
+	border: 0;
+	margin: 5px;
+}
+
+/*
+ * Log window
+ */
+QTextBrowser {
+	background-color: #262829;
+	color: #FFF;
+	padding: 10px;
+	font-size: 14px;
+	border: 0;
+	margin: 5px;
+}
+
+.log-time {
+	color: #95a5a6;
+}
+
+.log-server {
+	color: #d35400;
+	font-weight: bold;
+}
+
+.log-channel {
+	color: #e67e22;
+	font-weight: bold;
+}
+
+.log-privilege {
+	color: #c0392b;
+	font-weight: bold;
+}
+
+.log-target {
+	color: #27ae60;
+	font-weight: bold;
+}
+
+.log-source {
+	color: #27ae60;
+	font-weight: bold;
+}
+
+/*
+ * Scrollbar
+ */
+QScrollBar:vertical {
+	width: 15px;
+}
+
+QScrollBar:horizontal {
+	height: 15px;
+}
+
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal {
+	background-color: #ddd;
+}
+
+QScrollBar::handle:vertical:hover,
+QScrollBar::handle:horizontal:hover {
+	background-color: #aaa;
+}
+
+QScrollBar:vertical,
+QScrollBar:horizontal,
+QScrollBar::sub-line:vertical,
+QScrollBar::sub-line:horizontal,
+QScrollBar::add-line:vertical,
+QScrollBar::add-line:horizontal,
+QScrollBar::add-page:vertical,
+QScrollBar::add-page:horizontal,
+QAbstractScrollArea::cornel {
+	background-color: transparent;
+	border: 0;
+}
+
+
+/*
+ * Menu bar
+ */
+QMenuBar {
+	border: 0;
+	background-color: #262829;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+QMenuBar::item {
+	background: transparent;
+	color: #FFF;
+	border: 0;
+	padding: 10px;
+}
+
+QMenuBar::item:selected {
+	background: #3498db;
+	color: #FFF;
+}
+
+QMenuBar::item:pressed {
+	background: #2980b9;
+	color: #FFF;
+}
+
+/*
+ * Menu
+ */
+QMenu {
+	background: #34495E;
+	color: #FFF;
+	padding: 0;
+}
+
+QMenu::item {
+	background: transparent;
+	color: #FFF;
+	padding: 0.6em 2em;
+}
+
+QMenu::item:selected {
+	background: #2C3E50;
+	color: #fff;
+}
+
+QMenu::item:disabled {
+	color: #bbb;
+}
+
+QMenu::separator {
+	background: #2C3E50;
+	height: 1px;
+}
+
+QMenu::indicator {
+	width: 25px;
+	height: 20px;
+}
